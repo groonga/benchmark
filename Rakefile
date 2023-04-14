@@ -11,4 +11,11 @@ namespace :groonga do
        "benchmark",
        "ruby", "/benchmark/bin/groonga-benchmark")
   end
+
+  desc "Run tests"
+  task :test do
+    Dir.chdir("tests") do
+      sh("./run-tests.sh")
+    end
+  end
 end
