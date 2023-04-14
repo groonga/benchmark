@@ -8,7 +8,7 @@ namespace :groonga do
        "--rm",
        "-v", "#{Dir.pwd}:/benchmark",
        "--name", "benchmark",
-       "-it", "benchmark",
+       "benchmark",
        "ruby", "/benchmark/bin/groonga-benchmark")
   end
 end
