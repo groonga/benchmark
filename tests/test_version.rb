@@ -1,4 +1,5 @@
 require 'test/unit'
+require '../lib/groonga-benchmark'
 
 class TestVersion < Test::Unit::TestCase
   def test_version
