@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Hello, Groonga benchmark!"
+require_relative "../lib/groonga-benchmark"
 
 exit
