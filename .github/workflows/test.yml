@@ -22,7 +22,7 @@ jobs:
       - name: Install dependency gems
         run: |
           sudo gem install bundler
-          bundle install
+          sudo bundle install
       - name: Run tests
         run: |
           rake groonga:test
