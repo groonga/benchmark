@@ -12,6 +12,16 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
+require 'parquet'
 
-require_relative "groonga-benchmark/importer"
-require_relative "groonga-benchmark/version"
+module GroongaBenchmark
+  class Importer
+    def initialize(import_file_path)
+      @table = Arrow::Table.load(import_file_path)
+    end
+
+    def dump
+      pp @table
+    end
+  end
+end
